@@ -52,6 +52,11 @@ public class UIManager : MonoBehaviourSingleton<UIManager> {
 		resultText.gameObject.SetActive(false);
 	}
 
+	public void OnToggleChanged(bool toggle)
+	{
+		GameManager.Instance.is960 = toggle;
+	}
+
 	public void OnGameEnded() {
 		HalfMove latestHalfMove = GameManager.Instance.HalfMoveTimeline.Current;
 

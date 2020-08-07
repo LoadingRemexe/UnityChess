@@ -29,7 +29,8 @@ public class GameManager : MonoBehaviourSingleton<GameManager> {
 			return currentPiecesBacking;
 		}
 	} private readonly List<Piece> currentPiecesBacking = new List<Piece>();
-	
+	public bool is960 = false;
+
 	[SerializeField] private UnityChessDebug unityChessDebug;
 	private Game game;
 	private Queue<Movement> moveQueue;
